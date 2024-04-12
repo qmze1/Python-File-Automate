@@ -13,7 +13,6 @@ if response.status_code == 200:
 
     # Find all the article titles (modify this based on the actual structure of the website)
     article_titles = soup.find_all('h2', class_='article-title')
-
     # Extract and print the titles
     for title in article_titles:
         print(title.text)
